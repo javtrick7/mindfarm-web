@@ -3,14 +3,15 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 const base = import.meta.env.BASE_URL;
 ---
 
-<BaseLayout title="Viriato - Contacto" description="Contacta con Viriato Cooperativa.">
+<BaseLayout title="MindFarm — Contacto" description="Habla con el equipo de MindFarm.">
   <section class="hero-page">
     <div class="container">
       <div class="eyebrow">Contacto</div>
       <h1>Hablemos</h1>
       <p class="subtitle">
-        Si quieres conocer el proyecto, explorar el living lab o evaluar
-        MindFarm para tu contexto, estaremos encantados de conversar.
+        Si trabajas una finca y quieres evaluar MindFarm para tu contexto, o si
+        representas a una institución, centro de investigación o programa y ves
+        encaje, estaremos encantados de conversar.
       </p>
     </div>
   </section>
@@ -19,13 +20,13 @@ const base = import.meta.env.BASE_URL;
     <div class="container">
       <div class="grid grid-2">
         <div class="card">
-          <div class="card-title">viriatoagropecuaria@gmail.com</div>
+          <div class="card-title">javilosada7@gmail.com</div>
           <div class="card-body">
             Si esto conecta con tu trabajo, tu finca o tu institución,
             escríbenos.
           </div>
           <div class="mt-3">
-            <a href="mailto:viriatoagropecuaria@gmail.com" class="btn btn-primary">
+            <a href="mailto:javilosada7@gmail.com" class="btn btn-primary">
               Enviar correo
             </a>
           </div>
@@ -33,8 +34,43 @@ const base = import.meta.env.BASE_URL;
         <div class="card card-accent-brown">
           <div class="card-label">Dónde estamos</div>
           <div class="card-body">
-            <p>Sierra de Gata, Cáceres</p>
-            <p>Valle de Lecrín, Granada</p>
+            <p>Granada, Andalucía</p>
+            <p>Piloto operativo en Padul (Valle de Lecrín)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>El equipo</h2>
+      <p class="mt-2 mb-3">
+        Tres perfiles complementarios, sin solape de funciones. Todos los
+        activos del proyecto —hardware, datos, marca y software— pertenecen al
+        equipo promotor.
+      </p>
+      <div class="grid grid-3">
+        <div class="card card-accent visual-card visual-card-green">
+          <div class="card-title">Javi</div>
+          <div class="card-body">
+            Software, ciencia de datos y agronomía aplicada. Desarrolla el
+            gemelo digital y la app, y lidera la parte comercial.
+          </div>
+        </div>
+        <div class="card card-accent visual-card visual-card-blue">
+          <div class="card-title">Kike</div>
+          <div class="card-body">
+            Hardware, instalación y mantenimiento de los nodos en campo. Un
+            producto físico robusto y fiable en condiciones reales.
+          </div>
+        </div>
+        <div class="card card-accent-brown visual-card visual-card-earth">
+          <div class="card-title">Ana</div>
+          <div class="card-body">
+            Consultoría de I+D (renovables y agricultura regenerativa). Aporta
+            acceso a financiación pública, redes comerciales y conexión con el
+            ecosistema de innovación.
           </div>
         </div>
       </div>
@@ -45,7 +81,15 @@ const base = import.meta.env.BASE_URL;
     <div class="container text-center">
       <div class="btn-group" style="justify-content:center;">
         <a href={`${base}`} class="btn btn-secondary">Inicio</a>
-        <a href={`${base}mindfarm/`} class="btn btn-secondary">MindFarm</a>
+        <a href={`${base}mindfarm/`} class="btn btn-secondary">El sistema</a>
+        <a
+          href="https://mindfarm-demo.streamlit.app"
+          class="btn btn-primary"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Acceder a la herramienta
+        </a>
       </div>
     </div>
   </section>

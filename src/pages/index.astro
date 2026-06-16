@@ -4,28 +4,35 @@ const base = import.meta.env.BASE_URL;
 ---
 
 <BaseLayout
-  title="Viriato - Innovación agraria desde el campo para construir futuro rural"
-  description="Cooperativa, living lab y herramienta digital conectados para convertir producción real, investigación abierta y aprendizaje de campo en decisiones aplicables."
+  title="MindFarm — Agricultura de precisión de bajo coste para la pequeña explotación"
+  description="MindFarm aterriza la agricultura de precisión en la pequeña y mediana finca de regadío: rigor científico, bajo coste y código abierto al servicio de la agricultura familiar."
 >
   <section class="hero">
     <div class="container">
-      <div class="eyebrow">Viriato · cooperativa regenerativa · living lab · herramienta digital</div>
-      <h1>Innovación agraria para que el mundo rural siga siendo una opción de futuro</h1>
+      <div class="eyebrow">MindFarm · agricultura de precisión de bajo coste · código abierto</div>
+      <h1>Rigor científico al alcance de la agricultura familiar</h1>
       <p class="subtitle">
-        Viriato nace de la necesidad de revalorizar el mundo rural y construir
-        una alternativa de futuro sostenible desde el propio campo. Producimos,
-        investigamos y desarrollamos herramientas útiles para que la innovación
-        agraria refuerce actividad, autonomía y oportunidades en zonas rurales
-        que demasiadas veces quedan fuera del foco.
+        MindFarm es un sistema de gestión agronómica de bajo coste pensado para
+        aterrizar la agricultura de precisión en la pequeña y mediana
+        explotación de regadío. Lleva el método de la gran agricultura —gemelo
+        digital, modelos agronómicos, datos en continuo— a un coste y una
+        sencillez asumibles por una economía familiar.
       </p>
       <div class="btn-group">
-        <a href={`${base}mindfarm/`} class="btn btn-primary">Explorar MindFarm</a>
-        <a href={`${base}proyecto/`} class="btn btn-outline-light">Conocer el proyecto</a>
+        <a
+          href="https://mindfarm-demo.streamlit.app"
+          class="btn btn-primary"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Acceder a la herramienta
+        </a>
+        <a href={`${base}mindfarm/`} class="btn btn-outline-light">Ver cómo funciona</a>
       </div>
-      <div class="status-strip status-strip-light">
-        <span class="status-chip status-chip-light">MindFarm operativa</span>
-        <span class="status-chip status-chip-light">Piloto · Valle de Lecrín, Granada</span>
-        <span class="status-chip status-chip-light">Versión consultable</span>
+      <div class="status-strip">
+        <span class="status-chip status-chip-light">Operativo en campo real · Padul (Valle de Lecrín), Granada</span>
+        <span class="status-chip status-chip-light">Gemelo digital FAO-56</span>
+        <span class="status-chip status-chip-light">Software de código abierto</span>
       </div>
     </div>
   </section>
@@ -34,51 +41,53 @@ const base = import.meta.env.BASE_URL;
     <div class="container">
       <div class="manifesto-layout">
         <div>
-          <h2>Un manifiesto desde el territorio</h2>
+          <h2>El reto no es medir: es hacerlo viable a pequeña escala</h2>
           <p class="mt-2">
-            Creemos que el mundo rural no es un territorio del pasado, sino uno
-            de los lugares donde se decide el futuro. En Viriato defendemos
-            que cuidar la tierra, producir alimentos y generar conocimiento
-            pueden formar parte de un mismo proyecto de vida: digno,
-            inteligente y con raíces.
+            La agricultura de precisión funciona, pero su estructura de coste
+            está pensada para la gran explotación: la pequeña y mediana finca
+            —el grueso del tejido agrario y la más expuesta— queda fuera. El
+            reto no es justificar que medir importa, sino resolver la ecuación
+            que no se ha resuelto a esta escala: rigor científico a un coste y
+            una simplicidad asumibles por una economía familiar.
           </p>
           <p>
-            Queremos revalorizar el mundo rural desde dentro, demostrando que
-            es posible vivir, trabajar e innovar en el campo sin renunciar ni
-            a la ciencia, ni a la justicia social, ni a una vida conectada con
-            la naturaleza.
+            Ese encaje es, en el fondo, una cuestión de resiliencia. Ante
+            escasez hídrica estructural y extremos térmicos crecientes, la finca
+            pequeña que decide con datos —cuándo y cuánto regar, cuándo proteger
+            frente a una helada, en qué estado fenológico está el cultivo—
+            absorbe la volatilidad mejor que la que decide por inercia.
           </p>
           <p>
-            Nacemos con una convicción clara: la innovación agraria no puede
-            ser un privilegio reservado a las grandes explotaciones. La
-            tecnología útil debe ser abierta, replicable, comprensible y
-            asequible; una herramienta al servicio de las personas que trabajan
-            la tierra cada día.
+            MindFarm hace viable esa capacidad de decisión justo donde su coste
+            la volvía inalcanzable. Ese es el impacto: dotar de método a la
+            agricultura familiar para que sea lo bastante resiliente para
+            navegar el entorno que viene.
           </p>
         </div>
         <div class="manifesto-panel">
           <div class="manifesto-item">
-            <div class="manifesto-item-title">Apuesta colectiva</div>
+            <div class="manifesto-item-title">Nuestro valor</div>
             <p>
-              Viriato es una apuesta colectiva donde agroecología, ciencia de
-              datos y compromiso social se ponen al servicio de una misma
-              pregunta: cómo hacer del campo un lugar más habitable, más
-              autónomo y más viable.
+              No está en el hardware ni en la entrega de datos, sino en el
+              servicio y el acompañamiento técnico: instalación, mantenimiento,
+              interpretación agronómica y seguimiento cercano. Lo que convierte
+              una lectura de sensor en una decisión.
             </p>
           </div>
           <div class="manifesto-item">
-            <div class="manifesto-item-title">Qué futuro defendemos</div>
+            <div class="manifesto-item-title">Riguroso, pero sencillo</div>
             <p>
-              Defendemos un futuro rural abierto, justo y replicable, en el que
-              innovar no implique perder raíces, sino reforzarlas y hacerlas
-              sostenibles en el tiempo.
+              Científicamente sólido y, a la vez, pensado para que un perfil no
+              experto lo interprete sin esfuerzo y para que cualquiera pueda
+              implementarlo de forma autónoma. Esa doble sencillez es lo que lo
+              hace viable a pequeña escala.
             </p>
           </div>
           <div class="status-strip">
-            <span class="status-chip status-chip-operational">Abierto</span>
-            <span class="status-chip status-chip-active">Justo</span>
-            <span class="status-chip status-chip-rd">Replicable</span>
-            <span class="status-chip status-chip-exploration">Sostenible</span>
+            <span class="status-chip status-chip-operational">Riguroso</span>
+            <span class="status-chip status-chip-active">Asequible</span>
+            <span class="status-chip status-chip-rd">Abierto</span>
+            <span class="status-chip status-chip-exploration">Replicable</span>
           </div>
         </div>
       </div>
@@ -87,39 +96,42 @@ const base = import.meta.env.BASE_URL;
 
   <section class="section">
     <div class="container">
-      <h2>Tres capas, un mismo proyecto</h2>
+      <h2>Tres capas, un mismo sistema</h2>
       <p class="mt-2 mb-3">
-        Viriato se entiende mejor como un sistema vivo. La cooperativa sostiene
-        la base productiva, el living lab valida en entorno real y MindFarm
-        devuelve ese aprendizaje en forma de lectura práctica, alertas y
-        recomendaciones de uso. No son tres piezas separadas: son tres formas
-        de convertir experiencia en decisiones aplicables.
+        MindFarm se entiende mejor como tres capas que trabajan juntas: una de
+        captura de datos en campo, una de inteligencia que los modela y los
+        convierte en criterio, y una de servicio que pone ese criterio a
+        trabajar en la explotación. Ninguna vale por separado: el valor está en
+        el recorrido completo, del sensor a la decisión.
       </p>
       <div class="grid grid-3">
-        <div class="card card-accent-brown visual-card visual-card-earth">
-          <div class="card-label">Base productiva</div>
-          <div class="card-title">Viriato Agropecuaria</div>
-          <div class="card-body">
-            La cooperativa sostiene la base productiva del proyecto: cultivo
-            real, decisiones reales y una forma de trabajar que cuida suelo,
-            agua, viabilidad económica, economía familiar y continuidad rural.
-          </div>
-        </div>
         <div class="card card-accent visual-card visual-card-green">
-          <div class="card-label">Capa experimental</div>
-          <div class="card-title">Viriato Living Lab</div>
+          <div class="card-label">Capa 1 · Monitorización</div>
+          <div class="card-title">IoT propio y abierto</div>
           <div class="card-body">
-            El living lab contrasta hipótesis en entorno productivo y convierte
-            observación en método, validación y aprendizaje compartido.
+            Nodos diseñados por nosotros con sensor de suelo RS485 sobre red
+            LoRa de 868 MHz, hardware y firmware de código abierto. Una sola
+            instalación por finca, pensada para durar y para mantenerse sin
+            dependencias.
           </div>
         </div>
         <div class="card card-accent visual-card visual-card-blue">
-          <div class="card-label">Capa de producto</div>
-          <div class="card-title">MindFarm</div>
+          <div class="card-label">Capa 2 · Inteligencia</div>
+          <div class="card-title">Gemelo digital agronómico</div>
           <div class="card-body">
-            La herramienta devuelve ese aprendizaje a la explotación en forma
-            de interpretación, memoria acumulada, alertas y apoyo práctico a la
-            toma de decisiones.
+            Un gemelo digital FAO-56 modela el comportamiento hídrico y térmico
+            del cultivo. De ese mismo motor salen las decisiones del día
+            —riego, alertas de helada y calor, fenología— y las proyecciones
+            con las que abordamos un I+D riguroso.
+          </div>
+        </div>
+        <div class="card card-accent-brown visual-card visual-card-earth">
+          <div class="card-label">Capa 3 · Servicio</div>
+          <div class="card-title">Acompañamiento técnico</div>
+          <div class="card-body">
+            Instalación, mantenimiento, interpretación agronómica y seguimiento
+            cercano. La capa donde de verdad reside nuestro valor: traducir el
+            dato en una decisión situada, comprensible y asumible.
           </div>
         </div>
       </div>
@@ -130,48 +142,52 @@ const base = import.meta.env.BASE_URL;
     <div class="container">
       <h2>Esto ya está pasando en campo</h2>
       <p class="mt-2 mb-3">
-        Viriato no parte de una idea abstracta ni de una promesa futura. Parte
-        de una finca, de una cooperativa y de un sistema que ya está
-        produciendo, midiendo, aprendiendo y devolviendo capacidad de decisión
-        al día a día de la explotación.
+        MindFarm no es una promesa futura. Está desplegado y operativo en una
+        finca real, midiendo en continuo y devolviendo decisiones cada día.
       </p>
       <div class="grid grid-3">
         <div class="metric">
-          <div class="metric-value">monitoreo continuo</div>
-          <div class="metric-label">mediciones en campo real</div>
-          <div class="metric-detail">15 min de frecuencia</div>
+          <div class="metric-value">desde 2026</div>
+          <div class="metric-label">despliegue en campo real</div>
+          <div class="metric-detail">Padul (Valle de Lecrín), Granada</div>
         </div>
         <div class="metric">
           <div class="metric-value">FAO-56</div>
-          <div class="metric-label">modelo base</div>
-          <div class="metric-detail">gemelo digital operativo</div>
+          <div class="metric-label">gemelo digital operativo</div>
+          <div class="metric-detail">balance hídrico y evapotranspiración del cultivo</div>
         </div>
         <div class="metric">
-          <div class="metric-value">~150k</div>
-          <div class="metric-label">litros</div>
-          <div class="metric-detail">potencial estimado de ahorro frente a benchmark regional</div>
+          <div class="metric-value">cada 15 min</div>
+          <div class="metric-label">monitorización de suelo</div>
+          <div class="metric-detail">humedad, temperatura y conductividad eléctrica</div>
         </div>
       </div>
       <p class="muted text-center mt-2">
-        Despliegue operativo actual en Valle de Lecrín, Granada. La cifra de
-        ahorro es una estimación basada en benchmark regional.
+        Software de código abierto. Las cifras de ahorro de agua se publicarán
+        cuando exista validación propia suficiente; hasta entonces no
+        prometemos resultados que no podamos sostener con datos.
       </p>
     </div>
   </section>
 
   <section class="section">
     <div class="container text-center">
-      <h2>Elige tu siguiente paso</h2>
+      <h2>Pruébalo tú mismo</h2>
       <p class="mt-2">
-        Producción, investigación aplicada y herramienta digital conviven aquí
-        dentro de un mismo ciclo. Puedes entrar por la visión general del
-        proyecto, por el método con el que validamos en campo o por la
-        herramienta que convierte ese aprendizaje en uso práctico.
+        La herramienta es pública y consultable. Entra a ver cómo MindFarm
+        convierte los datos de una finca real en una recomendación de riego
+        diaria, o escríbenos si quieres evaluarlo para tu contexto.
       </p>
       <div class="btn-group" style="justify-content:center;">
-        <a href={`${base}mindfarm/`} class="btn btn-primary">Explorar MindFarm</a>
-        <a href={`${base}living-lab/`} class="btn btn-secondary">Explorar el Living Lab</a>
-        <a href={`${base}colaboraciones/`} class="btn btn-secondary">Plantear colaboración</a>
+        <a
+          href="https://mindfarm-demo.streamlit.app"
+          class="btn btn-primary"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Acceder a la herramienta
+        </a>
+        <a href={`${base}mindfarm/`} class="btn btn-secondary">Ver cómo funciona</a>
         <a href={`${base}contacto/`} class="btn btn-secondary">Hablar con el equipo</a>
       </div>
     </div>

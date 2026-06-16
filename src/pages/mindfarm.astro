@@ -4,22 +4,21 @@ const base = import.meta.env.BASE_URL;
 ---
 
 <BaseLayout
-  title="Viriato - MindFarm, criterio de uso para la explotación agraria"
-  description="Herramienta digital que transforma datos de suelo, clima y manejo en lectura operativa, alertas y criterios de uso para la explotación agraria."
+  title="MindFarm — El sistema: del sensor a la decisión"
+  description="Cómo funciona MindFarm: una capa IoT propia, un gemelo digital agronómico FAO-56 y un servicio de acompañamiento que convierte datos de suelo y clima en criterio de uso para la finca."
 >
   <section class="hero-page">
     <div class="container">
-      <div class="eyebrow">MindFarm</div>
-      <h1>Agricultura de precisión accesible para decidir mejor en campo real</h1>
+      <div class="eyebrow">El sistema</div>
+      <h1>Del sensor a la decisión, sin pasos intermedios para el agricultor</h1>
       <p class="subtitle">
-        MindFarm es la herramienta digital nacida dentro de Viriato Living Lab.
-        Convierte datos de suelo, clima y manejo en una lectura operativa de la
-        finca: qué está pasando, qué puede pasar y qué decisión conviene tomar
-        hoy. Ya está operativa en un piloto del Valle de Lecrín, Granada, y se
-        puede consultar.
+        MindFarm convierte datos de suelo, clima y manejo en una lectura
+        operativa de la finca: qué está pasando, qué puede pasar y qué decisión
+        conviene tomar hoy. Está operativo en un piloto de campo real en Padul
+        (Valle de Lecrín, Granada) y se puede consultar.
       </p>
-      <div class="status-strip status-strip-light">
-        <span class="status-chip status-chip-light">Piloto operativo · Valle de Lecrín, Granada</span>
+      <div class="status-strip">
+        <span class="status-chip status-chip-light">Piloto operativo · Padul (Valle de Lecrín), Granada</span>
       </div>
       <div class="btn-group">
         <a
@@ -30,7 +29,7 @@ const base = import.meta.env.BASE_URL;
         >
           Acceder a la herramienta
         </a>
-        <a href={`${base}living-lab/`} class="btn btn-secondary">Entender el Living Lab</a>
+        <a href={`${base}contacto/`} class="btn btn-secondary">Hablar con el equipo</a>
       </div>
     </div>
   </section>
@@ -39,27 +38,27 @@ const base = import.meta.env.BASE_URL;
     <div class="container">
       <h2>No es un panel para mirar datos: es una herramienta para decidir</h2>
       <p class="mt-2">
-        MindFarm reduce incertidumbre operativa en pequeñas explotaciones.
+        MindFarm reduce incertidumbre operativa en la pequeña explotación.
         Aporta interpretación, criterio y registro para tomar decisiones con
-        más claridad y menos dependencia de intuición tardía.
+        más claridad y menos dependencia de la intuición tardía.
       </p>
       <div class="grid grid-2 mt-3">
         <div class="card card-accent">
           <div class="card-title">Qué problema resuelve</div>
           <div class="card-body">
-            Muchas fincas toman decisiones con visibilidad parcial del estado
-            real del suelo, del clima y del ritmo del cultivo. MindFarm ayuda a
-            reducir esa zona ciega con lectura continua, contexto agronómico y
-            recomendaciones prácticas.
+            Muchas fincas deciden con visibilidad parcial del estado real del
+            suelo, del clima y del ritmo del cultivo. MindFarm reduce esa zona
+            ciega con lectura continua, contexto agronómico y recomendaciones
+            prácticas, a un coste asumible.
           </div>
         </div>
         <div class="card card-accent-brown">
           <div class="card-title">Para quién existe</div>
           <div class="card-body">
-            Para pequeñas explotaciones que necesitan agricultura de precisión
-            sin asumir costes ni complejidad muy elevados, y que quieren ganar
-            capacidad de decisión sin depender de una infraestructura técnica
-            desproporcionada.
+            Para la pequeña y mediana explotación que necesita agricultura de
+            precisión sin asumir el coste ni la complejidad de las soluciones
+            comerciales, y que quiere ganar capacidad de decisión sin depender
+            de una infraestructura técnica desproporcionada.
           </div>
         </div>
       </div>
@@ -68,29 +67,28 @@ const base = import.meta.env.BASE_URL;
 
   <section class="section">
     <div class="container">
-      <h2>Qué es un gemelo digital</h2>
+      <h2>Qué es el gemelo digital, y por qué importa</h2>
       <p class="mt-2">
         Un gemelo digital es una representación dinámica de la finca que se
-        mantiene actualizada con datos reales. No es solo un panel con números:
+        mantiene actualizada con datos reales. No es un panel con números:
         organiza la información de suelo, clima, manejo y cultivo para ofrecer
         una lectura útil de lo que está ocurriendo y de lo que puede pasar a
         corto plazo.
       </p>
       <p>
-        Su valor está en que no se limita a describir el presente. También
-        ayuda a anticipar escenarios y a convertir señales dispersas en
-        criterio de manejo: cuándo conviene regar, cuándo esperar, dónde hay
-        que mirar con más atención y qué variables están empezando a salirse de
-        una zona razonable.
+        Su valor está en que no se limita a describir el presente. Anticipa
+        escenarios y convierte señales dispersas en criterio de manejo: cuándo
+        conviene regar, cuándo esperar, dónde mirar con más atención y qué
+        variables empiezan a salirse de una zona razonable.
       </p>
       <p>
         Por ejemplo, una parcela puede mostrar una humedad aparentemente
-        aceptable hoy y, aun así, estar acercándose a una situación de estrés
-        si coinciden varios días de alta demanda atmosférica y poca reserva
-        útil en el suelo. El gemelo digital detecta esa tendencia antes de que
-        el problema sea evidente y la traduce en una recomendación concreta.
-        Del mismo modo, puede ayudar a leer señales tempranas de desviación en
-        variables críticas y apoyar decisiones de uso más allá del riego.
+        aceptable hoy y, aun así, acercarse a una situación de estrés si
+        coinciden varios días de alta demanda atmosférica y poca reserva útil
+        en el suelo. El gemelo digital detecta esa tendencia antes de que el
+        problema sea evidente y la traduce en una recomendación concreta. La
+        misma lógica sostiene las alertas de helada o golpe de calor y el
+        seguimiento del estado fenológico del cultivo.
       </p>
       <div class="diagram-panel mt-3">
         <div class="diagram-copy">
@@ -107,7 +105,7 @@ const base = import.meta.env.BASE_URL;
         <figure class="diagram-figure">
           <img
             src={`${base}mindfarm-diagram.svg`}
-            alt="Esquema ilustrado de MindFarm: suelo, clima y manejo alimentan un modelo que genera lectura operativa, escenarios y recomendación."
+            alt="Esquema de MindFarm: suelo, clima y manejo alimentan un modelo que genera lectura operativa, escenarios y recomendación."
             loading="lazy"
           />
         </figure>
@@ -118,48 +116,54 @@ const base = import.meta.env.BASE_URL;
   <section class="section">
     <div class="container">
       <h2>Capacidades actuales</h2>
+      <p class="mt-2 mb-3">
+        Todas operan sobre la misma instalación y los mismos datos, sin
+        hardware adicional. Cada capa añade valor agronómico sin sumar coste de
+        instalación ni horas de campo.
+      </p>
       <div class="grid grid-2 mt-3">
         <div class="card card-accent visual-card visual-card-green">
           <div class="card-label">Capacidad 1</div>
-          <div class="card-title">Monitorización</div>
+          <div class="card-title">Monitorización continua</div>
           <div class="card-body">
-            Lectura continua de variables de suelo y contexto ambiental para
-            interpretar el estado de la finca sin esperar señales tardías.
+            Lectura en continuo de humedad, temperatura y conductividad
+            eléctrica del suelo, más contexto meteorológico, para interpretar
+            el estado de la finca sin esperar señales tardías.
           </div>
         </div>
         <div class="card card-accent-brown visual-card visual-card-water">
           <div class="card-label">Capacidad 2</div>
-          <div class="card-title">Recomendaciones de uso</div>
+          <div class="card-title">Recomendación de riego</div>
           <div class="card-body">
-            Orientación práctica sobre qué conviene hacer, cuándo y con qué
-            prioridad, empezando hoy por el riego y abriendo el marco a nuevas
-            recomendaciones de manejo.
+            El núcleo operativo. Con el método FAO-56 (balance hídrico y
+            evapotranspiración del cultivo) traduce los datos en una decisión
+            diaria: cuándo regar y cuánto, explicada en términos comprensibles.
           </div>
         </div>
         <div class="card card-accent visual-card visual-card-blue">
           <div class="card-label">Capacidad 3</div>
-          <div class="card-title">Alertas operativas</div>
+          <div class="card-title">Alertas de estrés térmico</div>
           <div class="card-body">
-            Sistema ya operativo de avisos cuando variables críticas salen de
-            umbrales definidos: pH, CE, temperatura de aire y suelo o rachas de
-            viento elevadas.
+            Avisos anticipados de riesgo de helada (radiativa y advectiva) y de
+            golpe de calor, a partir de previsión meteorológica y umbrales
+            agronómicos tomados de la literatura científica.
           </div>
         </div>
         <div class="card card-accent-brown visual-card visual-card-gold">
           <div class="card-label">Capacidad 4</div>
-          <div class="card-title">Escenarios de evolución</div>
+          <div class="card-title">Seguimiento fenológico</div>
           <div class="card-body">
-            Simulación de escenarios para anticipar decisiones y no limitarse a
-            observar el estado actual.
+            Estimación del estado de desarrollo del cultivo por acumulación de
+            grados-día (GDD), base para anticipar labores y, más adelante,
+            riesgos de plaga y enfermedad.
           </div>
         </div>
       </div>
       <p class="muted mt-2">
         Hoy la recomendación de riego es el servicio principal porque es donde
-        ya existe validación operativa directa, pero MindFarm no se plantea
-        como una herramienta cerrada ahí. La lógica de producto apunta a
-        ampliar capas de criterio de uso, alertas y recomendaciones aplicables
-        a distintos ámbitos de la explotación agraria.
+        ya existe validación operativa directa. La hoja de ruta crece por capas
+        sobre los mismos datos: control nutricional (pH y conductividad
+        eléctrica) y riesgo fitosanitario (plagas y enfermedades).
       </p>
     </div>
   </section>
@@ -178,15 +182,15 @@ const base = import.meta.env.BASE_URL;
         <div class="card">
           <div class="card-title">Decisiones accionables</div>
           <div class="card-body">
-            No basta con mostrar variables. Hace falta traducirlas en una
-            acción comprensible, situada y asumible.
+            No basta con mostrar variables: hay que traducirlas en una acción
+            comprensible, situada y asumible por quien trabaja la finca.
           </div>
         </div>
         <div class="card">
           <div class="card-title">Aprendizaje acumulado</div>
           <div class="card-body">
             Registrar lo que ocurre permite mejorar campaña tras campaña y
-            sostener mejor la memoria operativa de la finca.
+            sostener la memoria operativa de la finca.
           </div>
         </div>
         <div class="card">
@@ -194,12 +198,12 @@ const base = import.meta.env.BASE_URL;
           <div class="card-body">
             La barrera de adopción no es solo técnica: también es de tiempo,
             dinero y soporte. MindFarm prioriza reducir esa fricción para que
-            la precisión también sea viable en economías familiares.
+            la precisión sea viable en economías familiares.
           </div>
         </div>
       </div>
       <p class="muted mt-2">
-        Las cifras de ahorro o mejora deben presentarse como estimaciones o
+        Las cifras de ahorro o mejora se presentan como estimaciones o
         benchmarks hasta disponer de validación propia suficiente.
       </p>
     </div>
@@ -210,27 +214,26 @@ const base = import.meta.env.BASE_URL;
       <h2>Qué está operativo y qué está en evolución</h2>
       <div class="grid grid-2 mt-3">
         <div class="card card-accent">
-          <div class="card-label">Piloto operativo</div>
-          <div class="card-title">Valle de Lecrín, Granada</div>
+          <div class="card-label">Operativo</div>
+          <div class="card-title">Piloto en Padul, Granada</div>
           <div class="card-body">
-            MindFarm funciona ya para monitorización, decisión de riego,
-            alertas cuando variables críticas se salen de rango y una primera
-            capa de lectura operativa consultable.
+            Monitorización continua, recomendación de riego, alertas de estrés
+            térmico y seguimiento fenológico, con una capa de lectura operativa
+            consultable desde la app pública.
           </div>
         </div>
         <div class="card card-accent-brown">
           <div class="card-label">En evolución</div>
-          <div class="card-title">Nuevas alertas, escalado y validación</div>
+          <div class="card-title">Nutrientes, sanidad y escalado</div>
           <div class="card-body">
-            Se están desarrollando nuevas capas de aviso, posibles alertas
-            vinculadas a plagas, ampliación multi-finca, nuevas líneas de
-            cultivo y más validación local para extender la utilidad del
-            sistema.
+            Control nutricional (pH y CE), riesgo de plaga y enfermedad,
+            ampliación multi-finca y nuevas líneas de cultivo, con más
+            validación local para extender la utilidad del sistema.
           </div>
         </div>
       </div>
       <div class="pullquote">
-        <p>MindFarm no nace como concepto: nace dentro de una finca y de un living lab activo.</p>
+        <p>MindFarm no nace como concepto: nace dentro de una finca real y de datos que se miden cada día.</p>
       </div>
       <div class="btn-group">
         <a
@@ -241,7 +244,7 @@ const base = import.meta.env.BASE_URL;
         >
           Acceder a la herramienta
         </a>
-        <a href={`${base}proyecto/`} class="btn btn-secondary">Volver al proyecto</a>
+        <a href={`${base}contacto/`} class="btn btn-secondary">Hablar con el equipo</a>
       </div>
     </div>
   </section>
