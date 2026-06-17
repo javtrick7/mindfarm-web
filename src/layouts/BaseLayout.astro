@@ -6,7 +6,7 @@ interface Props {
 
 const {
   title,
-  description = 'Agricultura regenerativa, ciencia aplicada y tecnología abierta para pequeñas explotaciones.',
+  description = 'Sistema de gestión agronómica de bajo coste: agricultura de precisión rigurosa y accesible para la pequeña y mediana explotación. Código abierto.',
 } = Astro.props;
 
 const base = import.meta.env.BASE_URL;
@@ -27,12 +27,11 @@ const navLinkClass = (href: string) =>
 <body>
   <nav class="nav">
     <div class="container nav-inner">
-      <a href={`${base}`} class="nav-brand">Viriato</a>
+      <a href={`${base}`} class="nav-brand">MindFarm</a>
       <ul class="nav-links">
-        <li><a href={`${base}proyecto/`} class={navLinkClass(`${base}proyecto/`)}>Proyecto</a></li>
-        <li><a href={`${base}living-lab/`} class={navLinkClass(`${base}living-lab/`)}>Living Lab</a></li>
-        <li><a href={`${base}mindfarm/`} class={navLinkClass(`${base}mindfarm/`)}>MindFarm</a></li>
-        <li><a href={`${base}colaboraciones/`} class={navLinkClass(`${base}colaboraciones/`)}>Colaborar</a></li>
+        <li><a href={`${base}mindfarm/`} class={navLinkClass(`${base}mindfarm/`)}>El sistema</a></li>
+        <li><a href="https://mindfarm-demo.streamlit.app" target="_blank" rel="noreferrer">Herramienta</a></li>
+        <li><a href={`${base}contacto/`} class={navLinkClass(`${base}contacto/`)}>Contacto</a></li>
       </ul>
     </div>
   </nav>
@@ -44,10 +43,10 @@ const navLinkClass = (href: string) =>
   <footer class="footer">
     <div class="container">
       <p>
-        Viriato Cooperativa Integral · Agricultura regenerativa · Código abierto
+        MindFarm · Agricultura de precisión de bajo coste · Código abierto
       </p>
       <p class="mt-1">
-        <a href="mailto:viriatoagropecuaria@gmail.com">viriatoagropecuaria@gmail.com</a>
+        <a href="mailto:javilosada7@gmail.com">javilosada7@gmail.com</a>
       </p>
     </div>
   </footer>
